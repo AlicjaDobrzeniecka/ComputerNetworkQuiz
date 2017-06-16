@@ -1,0 +1,340 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.justjava.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="How much do you know about the computer network? Check yourself in this short quiz.
+Good luck!"
+            android:textColor="#0277bd"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Let's start!"
+            android:textColor="#81d4fa"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="1.What does the decimal number 255 represent in binary?"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/one_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1111 1111"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/zero_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000 0000"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="2.What is the subnet mask used for?"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/give_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to give the IP address characteristic properties"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/divide_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to divide the IP address into network and host addresses"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="3.What does the shortcut IP stand for?"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/information_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Information Protocol"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/internet_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Internet Protocol"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="4. What is characteristis for the network address in the host part?"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/zeros_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zeros"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/ones_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ones"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="5. What is characteristis for the broadcast address in the host part?"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/zeros1_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zeros"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/ones1_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ones"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="6. What is the proper order of the 7-layers network architecture?"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/order1_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.Application Layer
+6.Presentation Layer
+5.Session Layer
+4.Transport Layer
+3.Network Layer
+2.Datalink Layer
+1.Physical Layer"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/order2_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.Application Layer
+6.Presentation Layer
+5.Session Layer
+4.Network Layer
+3.Transport Layer
+2.Datalink Layer
+1.Physical Layer"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="7. What is routing in computer network?"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/selecting_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It is the process of selecting a path for traffic in a network"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/protecting_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It is the process of protecting the computer from malware"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="8. What is true about the firewall in a computer network? Check all that apply"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/device_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A firewall is a network device for controlling network security and access rules"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/access_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firewalls are typically configured to reject access requests from unrecognized sources while allowing actions from recognized ones"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/role_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The role of the firewalls decreases as the number of cyber attacks increases"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="9.What is the name of the protocol designed to the Internet?"
+            android:textColor="#009688"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:onClick="submitPoints"
+            android:text="Score"
+            android:textColor="#81d4fa"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/message_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Your score"
+            android:textAllCaps="true"
+            android:textColor="#009688"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+</ScrollView>
